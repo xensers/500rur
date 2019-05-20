@@ -1,5 +1,7 @@
 @import 'core';
 @import 'common/base';
+@import 'common/header';
+@import 'common/footer';
 
 @import 'elements/buttons';
 @import 'elements/forms';
@@ -12,4 +14,4 @@
 @import 'elements/feedback-form';
 
 @import 'common/helpers';
-@import 'common/debug';
+// @import 'common/debug';

@@ -1,0 +1,19 @@
+.footer
+{
+  &__question
+  {
+    display: flex;
+    align-items: center;
+    float: right;
+    img
+    {
+      height: 2.5rem;
+      padding-right: 0.5rem;
+    }
+    span
+    {
+      width: 10rem;
+      display: inline-block;
+    }
+  }
+}
