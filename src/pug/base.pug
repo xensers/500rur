@@ -1,0 +1,53 @@
+extends template
+
+block vars
+  -
+    var siteTitle = 'Смета на сайт за 499₽';
+    var pageTitle = '';
+    var description = 'Наш сервис сэкономит ваше время или время вашего менеджера на создание сметы для разработки сайта. Получите готовый документ в 1 клик.';
+    var url       = 'http://xensers.github.io/500rur/';
+    var image     = url + 'images/logo.svg';
+  -
+    var html = {
+      attrs: {
+        lang: 'ru'
+      },
+      classList: []
+    }
+  -
+    var body = {
+      attrs: {},
+      classList: []
+    }
+  -
+    var layout = {
+      attrs: {},
+      classList: []
+    }
+
+append meta
+  meta(name='description', content=description)
+  meta(property='og:title', content=pageTitle)
+  meta(property='og:type', content='website')
+  meta(property='og:url', content=url)
+  meta(property='og:image', content=image)
+  meta(property='og:image:type', content='image/png')
+  meta(property='og:image:width', content='202')
+  meta(property='og:image:height', content='116')
+  meta(property='og:description', content=description)
+
+
+block styles
+  link(href='https://fonts.googleapis.com/css?family=Montserrat&display=swap' rel='stylesheet')
+  link(href='css/main.css' rel='stylesheet')
+
+block scripts
+
+  script(src="scripts/main.js")
+
+block body-start
+
+block header
+
+block modal
+block footer
