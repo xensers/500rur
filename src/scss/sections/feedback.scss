@@ -1,0 +1,38 @@
+.feedback-section
+{
+    position: relative;
+
+    margin: 0;
+
+    text-align: center;
+
+    &__girl
+    {
+        position: absolute;
+        top: -12%;
+        left: 5%;
+
+        height: 120%;
+        max-width: 93%;
+    }
+
+    &__illistration
+    {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+
+        height: 35%;
+
+        transform: translateY(-50%);
+    }
+
+    &__wrapper
+    {
+        position: relative;
+        z-index: 10;
+
+        max-width: 45rem;
+        margin: auto;
+    }
+}
