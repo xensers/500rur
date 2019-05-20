@@ -1,8 +1,13 @@
 extends pug/base
 
-append vars
-  - pageTitle = '';
-  - layout.classList = ['homepage'];
-
 block content
-  h1 Hello
+  // BEGIN: start-section
+  +b.SECTION.start-section
+    +e.illustration
+      img(src='images/main-illustration.png' srcset='images/main-illustration@2x.png 2x, images/main-illustration@3x.png 3x')
+    +e.H1.header Смета на сайт за 499₽
+    +e.text
+      p Наш сервис сэкономит ваше время или время вашего менеджера на создание сметы для разработки сайта. Получите готовый документ в 1 клик.
+    +e.button
+      +b.A.btn_red Как получить?
+  // END: start-section

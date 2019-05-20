@@ -11,6 +11,12 @@ body
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 
+    background-color: $color-light;
+
+    @include respond-to('small')
+    {
+        font-size: 12px;
+    }
     @include respond-from(FHD)
     {
         font-size: 24px;
@@ -23,6 +29,29 @@ body
     {
         font-size: 48px;
     };
+}
+
+section
+{
+    padding: 3.75rem 1rem;
+}
+
+
+h1,
+.h1
+{
+    font-size: 3.75rem;
+    font-weight: bold;
+    line-height: 1.1;
+
+    margin: 1rem auto;
+
+    color: #000;
+
+    @include respond-to('small')
+    {
+        font-size: 3rem;
+    }
 }
 
 img,

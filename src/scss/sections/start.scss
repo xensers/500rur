@@ -1,0 +1,26 @@
+.start-section
+{
+  text-align: center;
+
+  &__illustration img
+  {
+    width: 60rem;
+  }
+  &__header
+  {
+
+  }
+  &__text
+  {
+    max-width: 52rem;
+    margin: auto;
+    font-size: 1.125rem;
+    line-height: 1.89;
+    text-align: center;
+    color: #777;
+  }
+  &__button
+  {
+
+  }
+}
