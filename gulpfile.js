@@ -60,6 +60,7 @@ gulp.task('pug', function() {
         pretty: true
     }))
     .pipe(gulp.dest('dist/'))
+    .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('img', function() {
@@ -80,7 +81,7 @@ gulp.task('js', function () {
         .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/scripts/'))
-        .pipe(reload({stream: true}));
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('scripts', function() {

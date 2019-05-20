@@ -1,0 +1,52 @@
+.steps-section
+{
+  background-color: #f0f4f8;
+  text-align: center;
+  padding: 5rem 0 10rem 0;
+
+  @include respond-from('medium')
+  {
+      padding: 13rem 0;
+  }
+
+  &__header
+  {
+    position: relative;
+    @include respond-from('medium')
+    {
+      margin-bottom: -2rem;
+    }
+    &:before
+    {
+      content: '';
+      display: inline-block;
+      width: 10rem;
+      @include respond-to('medium')
+      {
+          width: 3rem;
+      }
+      @include respond-to('medium')
+      {
+          display: none;
+      }
+    }
+  }
+
+  &__header-sock
+  {
+    position: relative;
+    margin-left: -1.5rem;
+    width: 8rem;
+    vertical-align: top;
+    @include respond-to('medium')
+    {
+        margin-left: -0.8rem;
+        width: 7rem;
+    }
+    @include respond-to('medium')
+    {
+        display: block;
+        margin: 2rem auto;
+    }
+  }
+}

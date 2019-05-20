@@ -54,6 +54,23 @@ h1,
     }
 }
 
+h2,
+.h2
+{
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+
+    margin: 1rem auto;
+
+    color: #000;
+
+    @include respond-to('small')
+    {
+        font-size: 3rem;
+    }
+}
+
 img,
 .icon
 {
